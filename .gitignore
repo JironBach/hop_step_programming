@@ -18,6 +18,9 @@ build/
 tests/report/
 cover/*
 
+venv
+staticfiles
+
 var/*.log
 var/*.pid
 
