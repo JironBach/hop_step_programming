@@ -1,6 +1,8 @@
 machine:
   python:
     version: 2.7.12
+  pre:
+    - pip install -r requirements/dev.txt
 
 dependencies:
   pre:
