@@ -118,3 +118,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# test settings
+INSTALLED_APPS += ('django_nose',)
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner' 
+NOSE_ARGS = [
+    '--with-coverage',  # coverage を取る
+    '--cover-html',  # coverage を html で cover/ に出力する
+    '--cover-package=hop_step_programming',  # coverage を取得する対象アプリは app1 と app2
+]
+

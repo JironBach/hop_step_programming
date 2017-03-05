@@ -1,0 +1,16 @@
+machine:
+  python:
+    version: 2.7.6
+
+dependencies:
+  pre:
+    - pip install -r requirements/dev.txt
+
+test:
+  pre:
+    - flake8 sandbox
+  override:
+    - python sandbox/manage.py test hop_step_programming
+  post:
+    - mv cover $CIRCLE_ARTIFACTS
+
