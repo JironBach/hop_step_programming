@@ -1,4 +1,6 @@
 machine:
+  environment:
+    PYTHONPATH: ${PYTHONPATH}
   python:
     version: 2.7.12
   pre:
