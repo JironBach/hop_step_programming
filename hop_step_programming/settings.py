@@ -139,3 +139,8 @@ NOSE_ARGS = [
     '--cover-package=hop_step_programming',  # coverage を取得する対象アプリは app1 と app2
 ]
 
+try:
+    from .local_settings import *
+except ImportError:
+    pass
+

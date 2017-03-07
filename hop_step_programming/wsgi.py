@@ -15,3 +15,6 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hop_step_programming.settings")
 
 application = Cling(get_wsgi_application())
 
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(application)
+
