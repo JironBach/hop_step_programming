@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hop_step_programming',
     'gunicorn',
+
+    'welcome',
 ]
 
 MIDDLEWARE = [
