@@ -1,4 +1,4 @@
-appdirs==1.4.2
+appdirs==1.4.0
 chainer==1.21.0
 coverage==4.3.4
 cycler==0.10.0
