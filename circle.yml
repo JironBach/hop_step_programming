@@ -4,11 +4,13 @@ machine:
   python:
     version: 3.6.0
   pre:
+    - pip install --upgrade pip
     - pip install -r ./requirements.txt
 
 dependencies:
   pre:
-    - sudo pip install -r ./requirements.txt
+    - pip install --upgrade pip
+    - pip install -r ./requirements.txt
 
 test:
   pre:
