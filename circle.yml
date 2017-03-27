@@ -3,9 +3,6 @@ machine:
     PYTHONPATH: ${PYTHONPATH}
   python:
     version: 3.6.0
-  #pre:
-  #  - pip install --upgrade pip
-  #  - pip install -r ./requirements.txt
 
 dependencies:
   pre:
@@ -16,9 +13,9 @@ test:
   pre:
     - flake8 sandbox
   override:
-    - python sandbox/manage.py test hop_step_programming
-  post:
-    - mv cover $CIRCLE_ARTIFACTS
+    - python ./manage.py test hop_step_programming
+  #post:
+  #  - mv cover $CIRCLE_ARTIFACTS
 
 deployment:
   staging:
