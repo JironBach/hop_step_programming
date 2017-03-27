@@ -3,9 +3,9 @@ machine:
     PYTHONPATH: ${PYTHONPATH}
   python:
     version: 3.6.0
-  pre:
-    - pip install --upgrade pip
-    - pip install -r ./requirements.txt
+  #pre:
+  #  - pip install --upgrade pip
+  #  - pip install -r ./requirements.txt
 
 dependencies:
   pre:
