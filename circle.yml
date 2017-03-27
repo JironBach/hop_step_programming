@@ -17,9 +17,9 @@ test:
   #post:
   #  - mv cover $CIRCLE_ARTIFACTS
 
-deployment:
-  staging:
-    branch: develop
-    heroku:
-      appname: hop-step-programming
+#deployment:
+#  staging:
+#    branch: develop
+#    heroku:
+#      appname: hop-step-programming
 
