@@ -1,4 +1,78 @@
-<html>
-  <p>Hop Step Programming!</p>
-</html>
+{% extends 'application.html' %}
 
+{% block content %}
+<div id="container">
+<div id="contents">
+
+<div class="floatwrap">
+  <div class="main_left">
+    <h2>コンテンツ</h2>
+    <ul>
+        <li><%= link_to 'Googleハングアウトについて', contents_hangouts_path %></li>
+        <li><%= link_to 'Hour of Codeについて', contents_hour_of_code_path %></li>
+        <li><%= link_to 'Scratchについて', contents_scratch_path %></li>
+        <li><%= link_to 'Code Monkeyについて', contents_codemonkey_path %></li>
+        <li><%= link_to 'Rubyについて', contents_ruby_path %></li>
+        <li><%= link_to 'iOS開発について', contents_ios_path %></li>
+        <li><%= link_to 'Android開発について', contents_android_path %></li>
+      </ul>
+  </div>
+  <div class="main_right">
+      <h2>リンク集</h2>
+        <p>
+        <li><%= link_to 'ブログ「たのしいプログラミング」', 'http://ameblo.jp/hardcastle/', target: '_blank' %></li>
+        <li><%= link_to 'チラシ', '/download/Blueberry-Piチラシ.pdf', target: '_blank' %></li>
+        <li><%= link_to 'Hour of Code', 'https://code.org/', target: '_blank' %></li>
+        <li><%= link_to 'SCRATCH', 'https://scratch.mit.edu/', target: '_blank' %></li>
+        <li><%= link_to 'Code Monkey', 'https://codemonkey.jp/', target: '_blank' %></li>
+        </p>
+        <p>
+        <li><%= link_to 'オススメHTML5、CSS3学習サイト', 'http://honttoni.blog74.fc2.com/', target: '_blank' %></li>
+        <li><%= link_to 'オススメRuby学習サービス15選', 'https://techacademy.jp/magazine/6154', target: '_blank' %></li>
+        <li><%= link_to 'Swift/iOS入門に最適なチュートリアルサイト10個', 'https://mayonez.jp/1526', target: '_blank' %></li>
+        <li><%= link_to 'Androidアプリ開発入門チュートリアルサイトまとめ', 'https://mayonez.jp/1567', target: '_blank' %></li>
+        </p>
+  </div>
+</div><!-- // floatwrap end -->
+
+<%= render partial: 'layouts/news' %>
+
+</div><!-- // contents end -->
+
+<%= render partial: 'sidebar' %>
+
+<p id="cds">Designed by <a href="http://www.css-designsample.com/">CSS.Design Sample</a></p>
+
+</div>
+<!-- contents end -->
+</div>
+
+<div id="footer">
+<div id="footerArea" class="floatwrap">
+
+  <div class="footer_logo">
+  <div class="footer_elogo">
+    <h6><%= link_to image_tag("footer_elogo.jpg", alt: "ブルーベリー・パイロゴ", width: "72", height: "66"), "http://www.sukimajapan.com", target: "_blank" %></a></h6>
+    </div>
+    <div class="footer_corp">
+      <h6>090-8508-8128</h6>
+      <p>〒215-0018<br>
+        神奈川県川崎市麻生区王禅寺東4-20-1</p>
+    </div>
+  </div>
+
+  <div class="footer_navi">
+    <ul>
+    <li>・<%= link_to 'ブルーベリー・パイとは', about_path %></li>
+    <li>・<%= link_to '運営会社', corporate_path %></li>
+    <li>・<%= link_to 'サイトマップ', sitemap_path %></li>
+    <li>・<%= link_to 'プライバシーポリシー', privacy_path %></li>
+    <li>・<%= link_to 'お問い合わせ', contact_path %></li>
+    </ul>
+  </div>
+
+  <div class="footer_copy">  <%= link_to raw('Copyright &copy; ホップステッププログラミング'), "http://www.blueberry-pi.xyz" %> All Rights Reserved.</div>
+
+</div><!-- end div#footerArea -->
+</div><!-- end div#footer -->
+{% endblock content %}

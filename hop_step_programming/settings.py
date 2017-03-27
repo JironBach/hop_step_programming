@@ -128,13 +128,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
 # test settings
 INSTALLED_APPS += ('django_nose',)
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner' 
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 NOSE_ARGS = [
     '--with-coverage',  # coverage を取る
     '--cover-html',  # coverage を html で cover/ に出力する

@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ホップステッププログラミング</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'stylesheets/application.css' %}">
+  <link rel="stylesheet" href="{% static 'stylesheets/common.css' %}">
+  <link rel="stylesheet" href="{% static 'stylesheets/import.css' %}">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="header-inner">
+<h1>オンライン・プログラミング教室</h1>
+<p class="description"></p>
+<p class="logo"><a href="/">ホップステッププログラミング</a></p>
+</div>
+</div>
+<!-- // header end -->
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
